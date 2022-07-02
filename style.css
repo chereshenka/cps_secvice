@@ -89,17 +89,18 @@ header{
    letter-spacing: -0.2px;   
    color: #7E7E82;
    text-decoration: none;
+   margin: 5px;
    padding: 8px 16px 8px 16px;
    white-space: nowrap;
 }
 .main__link--active{
-   border: 2px solid #b8ffec;
+   outline: 2px solid #b8ffec;
    background: #FFFFFF;
    border-radius: 6px;
 }
 .main__link:hover{
-   border: 2px solid #b8ffec;
    background: #FFFFFF;
+   outline: 2px solid #b8ffec;
    border-radius: 6px;
 }
 .main__content{
