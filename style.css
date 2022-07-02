@@ -97,6 +97,11 @@ header{
    background: #FFFFFF;
    border-radius: 6px;
 }
+.main__link:hover{
+   border: 2px solid #b8ffec;
+   background: #FFFFFF;
+   border-radius: 6px;
+}
 .main__content{
    margin-top: 24px;
    padding: 0 16px 0 16px;
@@ -113,6 +118,9 @@ header{
    border: none;
    background: #fff;
    margin-top: 16px;
+}
+.main__full-view:hover{
+   cursor: pointer;
 }
 .main__full-view::before{
    content:url('img-style/icon.png');
@@ -198,6 +206,7 @@ header{
       align-items: baseline;
       justify-content: space-around;      
       font-weight: 600;
+      margin-left: 32px;
    }
    .main__check-status{
       margin-left: 32px;
