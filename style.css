@@ -115,7 +115,7 @@ header{
    margin-top: 16px;
 }
 .main__full-view::before{
-   content:url('/img-style/icon.png');
+   content:url('img-style/icon.png');
    margin-right: 16px;
 }
 .main__content-image{
@@ -209,12 +209,12 @@ header{
       align-items: center;
    }
    .main__repair::after{
-      content: url('/img-style/repair.png');
+      content: url('img-style/repair.png');
       margin-left: 8px;
       height: 40px;
    }
    .main__check-status::after{
-      content: url('/img-style/checkstatus.png');
+      content: url('img-style/checkstatus.png');
       margin-left: 8px;
       height: 40px;
    }
