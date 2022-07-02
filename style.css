@@ -1,0 +1,237 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'TT Lakes';
+   font-size: 16px;
+   line-height: 24px;   
+   letter-spacing: -0.2px;
+}
+.wrapper{
+   width: 320px;
+   margin: 0 auto;
+   background-color: #F8F8F8;
+}
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 20px;
+   background-color: #fff;
+}
+.divider{
+   height: 32px;
+   width: 2px;
+   background-color: #eaeaea;
+   border-radius: 1px;
+}
+.header__divider-left{
+   display: none;
+}
+.header__left{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.header__burger{
+   margin-left: 16px;
+   margin-right: 16px;
+   align-self: center;
+}
+.header__right{
+   display: flex;
+   align-items: center;
+}
+.header__left-buttons{
+   display: none;
+}
+.header__right-buttons{
+   width: 132px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.main__desktop-view{
+   margin-top: 24px;
+}
+.main__header{   
+   display: flex;
+   font-size: 28px;
+   line-height: 40px;
+   letter-spacing: -0.6px;
+   color: #1B1C21;
+}
+.main__header::before{
+   content: '';
+   display: block;
+   height: 40px;
+   width: 4px;
+   border-radius: 0 4px 4px 0px;
+   background-color: #41F6D7;
+   margin-right: 12px;
+}
+.main__right-side-buttons{
+   display: none;
+}
+/* links */
+
+.main__scroll-menu{
+   display: flex;
+   overflow: scroll;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   margin-top: 24px;
+   padding-left: 16px;
+   align-items: baseline;
+}
+.main__link{
+   display: block;
+   box-sizing: border-box; 
+   letter-spacing: -0.2px;   
+   color: #7E7E82;
+   text-decoration: none;
+   padding: 8px 16px 8px 16px;
+   white-space: nowrap;
+}
+.main__link--active{
+   border: 2px solid #b8ffec;
+   background: #FFFFFF;
+   border-radius: 6px;
+}
+.main__content{
+   margin-top: 24px;
+   padding: 0 16px 0 16px;
+}
+.main__text{
+   font-size: 14px;
+   line-height: 18px;
+   letter-spacing: 0.2px;
+   color: #1B1C21;
+   height: 90px;
+   overflow: hidden;
+}
+.main__full-view{
+   border: none;
+   background: #fff;
+   margin-top: 16px;
+}
+.main__full-view::before{
+   content:url('/img-style/icon.png');
+   margin-right: 16px;
+}
+.main__content-image{
+   margin-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+   body{
+      display: flex;
+   }
+   .wrapper{
+      width: 768px;
+   }
+   .vanisher{
+      width: 20px;
+      background: linear-gradient(270deg, rgb(255, 255, 255), rgb(255, 255, 255) 100%);
+      border: 1px solid black;
+   }
+   .header{
+      justify-content: space-between;
+   }
+   .header__left{      
+      justify-content: space-around;
+   }
+   .header__burger{
+      margin-right: 0;
+   }
+   .header__divider-left{
+      display: block;
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+   .header__left-buttons{
+      display: block;
+      height: 40px;
+   }
+   .header__left-buttons > img{
+      margin-right: 16px;
+   }
+   .main__content{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 32px;
+   }
+   .main__description{
+      width: 312px;
+      padding: 0 24px 0 24px;
+   }
+   .main__text{      
+      height: 160px;
+   }
+   .main__full-view{
+      margin-top: 10px;
+      margin-left: 16px;
+   }
+   .main__content-image > img{
+      width: 360px;
+      height: auto;
+      margin-top: -10px;
+      margin-right: 30px;
+      border-radius: 10px;
+   }
+}
+
+@media screen and (min-width: 1120px) {
+   .wrapper{
+      width: 1120px;
+   }
+   header{
+      display: none;
+   }
+   .main__desktop-view{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 42px;
+   }
+   .main__right-side-buttons{
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;      
+      font-weight: 600;
+   }
+   .main__check-status{
+      margin-left: 32px;
+      display: flex;
+      align-items: center;
+   }
+   .main__repair{
+      display: flex;
+      align-items: center;
+   }
+   .main__repair::after{
+      content: url('/img-style/repair.png');
+      margin-left: 8px;
+      height: 40px;
+   }
+   .main__check-status::after{
+      content: url('/img-style/checkstatus.png');
+      margin-left: 8px;
+      height: 40px;
+   }
+   .main__header::before{
+      margin-right: 30px;
+   }
+   .header__left-buttons > img{
+      margin-right: 16px;
+   }
+   .main__scroll-menu{
+      flex-wrap: wrap;
+   }
+   .main__description{
+      width: 490px;
+   }
+   .main__content-image > img{
+      width: 500px;
+      margin-top: -20px;
+   }
+}
