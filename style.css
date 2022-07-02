@@ -36,6 +36,7 @@ header{
    margin-left: 16px;
    margin-right: 16px;
    align-self: center;
+   height: 40px;
 }
 .header__right{
    display: flex;
@@ -82,6 +83,15 @@ header{
    margin-top: 24px;
    padding-left: 16px;
    align-items: baseline;
+}
+.main__scroll-menu::after{
+   content: '';
+   display: block;   
+   position: fixed;
+   background-image: linear-gradient(to right, transparent, #fff);
+   height: 40px;
+   width: 80px;
+   right: 15px;
 }
 .main__link{
    display: block;
