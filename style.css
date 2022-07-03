@@ -60,6 +60,7 @@ header{
    line-height: 40px;
    letter-spacing: -0.6px;
    color: #1B1C21;
+   font-family: 'TT Lakes', serif;
 }
 .main__header::before{
    content: '';
@@ -78,11 +79,12 @@ header{
 .main__scroll-menu{
    display: flex;
    overflow: scroll;
-   overflow-y: hidden;
-   overflow-x: hidden;
    margin-top: 24px;
    padding-left: 16px;
    align-items: baseline;
+}
+.main__scroll-menu::-webkit-scrollbar{
+   display:none;
 }
 .main__scroll-menu::after{
    content: '';
@@ -100,6 +102,7 @@ header{
    color: #7E7E82;
    text-decoration: none;
    margin: 5px;
+   font-weight: 600;
    padding: 8px 16px 8px 16px;
    white-space: nowrap;
 }
