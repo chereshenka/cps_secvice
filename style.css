@@ -11,6 +11,8 @@
    margin: 0 auto;
    background-color: #F8F8F8;
 }
+h1{
+font-family: 'TT Lakes', sans-serif;}
 /* buttons */
 .button{   
    border: none;
