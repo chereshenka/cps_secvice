@@ -130,7 +130,6 @@ header{
 }
 .main__full-view{
    border: none;
-   background: #fff;
    margin-top: 16px;
 }
 .main__full-view:hover{
