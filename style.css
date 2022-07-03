@@ -11,6 +11,10 @@
    margin: 0 auto;
    background-color: #F8F8F8;
 }
+
+h1{
+font-weight: 600;
+font-style: normal;}
 /* buttons */
 .button{   
    border: none;
