@@ -1,0 +1,114 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'TT Lakes';
+   font-size: 16px;
+   line-height: 24px;   
+   letter-spacing: -0.2px;
+   color: #1b1c21;
+   font-weight:500;
+}
+.aside-menu{
+   box-sizing: border-box;
+   padding: 20px;
+   width: 320px;
+   height: 100vh;
+   position: fixed;
+   box-shadow:-30px 0 80px 2px rgb(0,0,0,0.6);
+}
+.button{   
+   border: none;
+   background: none;
+   height: 40px;
+   width: 40px;  
+   transition: filter 1s ease-in-out;
+}
+.button:hover{   
+   cursor: pointer;
+   filter: hue-rotate(360deg);
+}
+.button-burger-open{
+   background-image: url(img-style/burger-open.png);
+   background-repeat: no-repeat;
+}
+.button-call{
+   background-image: url(img-style/call.png);
+   background-repeat: no-repeat;
+}
+.button-chat{
+   background-image: url(img-style/chat.png);
+   background-repeat: no-repeat;
+}
+.button-profile{
+   background-image: url(img-style/profile.png);
+   background-repeat: no-repeat;
+}
+.button-search{
+   background-image: url(img-style/search.png);
+   background-repeat: no-repeat;
+}
+/* header */
+.burger-menu{
+   display: flex;
+   align-items: center;
+}
+.burger-menu__button-burger-open{
+   margin-right: 20px;
+}
+.burger-menu__button-search{
+   margin-left: 80px;
+}
+/* nav */
+.nav__list{
+   list-style: none;
+   margin-top: 50px;
+}
+.nav__list a{
+   text-decoration: none;
+}
+.nav__link{
+   margin-bottom: 32px;
+}
+.link--active a{
+   color: #7E7E82;
+}
+.link--active::before{
+   content: '';
+   display: inline-block;
+   height: 32px;
+   width: 4px;
+   position: relative;
+   top: 10px;
+   border-radius: 0 4px 4px 0px;
+   background-color: #41F6D7;
+   margin-left: -20px;
+   margin-right: 16px;
+}
+/* footer */
+.contact{
+   margin-top: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.contact__button{
+   margin-right: 16px;
+}
+.contact__mail{
+   margin-top: 16px;
+   text-decoration: none;
+}
+.contact__tel{
+   font-size: 24px;
+   font-weight: 700;
+   text-decoration: none;
+   margin-top: 12px;
+}
+.lang-menu a{   
+   text-decoration: none;
+}
+.contact__lang{
+   margin-top: 40px;
+}
+.lang--active{
+   color: #7E7E82;
+}
