@@ -4,16 +4,16 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="aside.css">
    <link rel="stylesheet" href="fonts/font.css">
    <title>cps aside menu</title>
 </head>
 <body>
    <aside class="aside-menu open">
-      <header class="burger-menu">
-         <button class="burger-menu__button-burger-open button-burger-open button"></button>
-         <a href="#"><img src="img-style/logo.svg" alt="logo button"></a>
-         <button class="burger-menu__button-search button-search button"></button>
+      <header class="header">
+         <button class="header__button-header-open button-header-open button"></button>
+         <a href="#"><img class="header__logo" src="img-style/logo.svg" alt="logo button"></a>
+         <button class="header__button-search button-search button"></button>
       </header>
       <nav class="nav">
          <ul class="nav__list">
@@ -27,18 +27,18 @@
            <li class="nav__link link"> <a href="#">Контакты</a></li>
          </ul>
       </nav>
+      <section class="contact__buttons">
+         <button class="contact__button button contact__button-call button-call"></button>
+         <button class="contact__button button contact__button-chat button-chat"></button>
+         <button class="contact__button button contact__button-profile button-profile"></button>
+      </section>
       <footer class="contact">
-         <div class="contact__buttons">
-            <button class="contact__button button contact__button-call button-call"></button>
-            <button class="contact__button button contact__button-chat button-chat"></button>
-            <button class="contact__button button contact__button-profile button-profile"></button>
-         </div>
          <a class="contact__mail" href="mailto:mail@cps.com">mail@cps.com</a>
          <a class="contact__tel" href="tel:88008908900">8 800 890 8900</a>
-         <div class="contact__lang lang-menu">
-            <button class="contact__lang lang lang-ru lang--active">RU</button>
-            <button class="contact__lang lang lang-en">EN</button>
-            <button class="contact__lang lang lang-ch">CH</button>
+         <div class="contact__lang lang-buttons">
+            <button class="contact__lang-button button lang-ru lang-button--active">RU</button>
+            <button class="contact__lang-button button lang-en">EN</button>
+            <button class="contact__lang-button button lang-ch">CH</button>
          </div>
       </footer>
    </aside>

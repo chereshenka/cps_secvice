@@ -27,7 +27,7 @@
    cursor: pointer;
    filter: hue-rotate(360deg);
 }
-.button-burger-open{
+.button-header-open{
    background-image: url(img-style/burger-open.png);
    background-repeat: no-repeat;
 }
@@ -48,15 +48,21 @@
    background-repeat: no-repeat;
 }
 /* header */
-.burger-menu{
+.header{
    display: flex;
    align-items: center;
 }
-.burger-menu__button-burger-open{
+.header__button-header-open{
    margin-right: 20px;
 }
-.burger-menu__button-search{
+.header__button-search{
    margin-left: 80px;
+}
+.header__logo{
+   transition: transform 0.2s;
+}
+.header__logo:hover{
+   transform: skew(30deg, -30deg);
 }
 /* nav */
 .nav__list{
@@ -65,9 +71,13 @@
 }
 .nav__list a{
    text-decoration: none;
+   transition: font-size 0.2s ease-in-out;
 }
 .nav__link{
    margin-bottom: 32px;
+}
+.nav__link:hover a{
+   font-size: 1.1rem;
 }
 .link--active a{
    color: #7E7E82;
@@ -86,16 +96,41 @@
 }
 /* footer */
 .contact{
-   margin-top: 100%;
    display: flex;
    flex-direction: column;
 }
-.contact__button{
+.contact__button{   
+   margin-top: 100%;
    margin-right: 16px;
 }
 .contact__mail{
    margin-top: 16px;
    text-decoration: none;
+}
+.contact__mail::after{
+   content:'';
+   display:inline-block;
+   width: 16px;
+   height: 16px;
+   margin-left: 10px;
+   background: url('img-style/email.png') -20px 0 no-repeat;
+   transition: background-position 0.2s ease-in;
+}
+.contact__tel::after{
+   content:'';
+   display:inline-block;
+   width: 24px;
+   height: 24px;
+   margin-left: 10px;
+   background: url('img-style/mobile.png') -30px 0 no-repeat;
+   transition: background-position 0.2s ease-in;
+}
+.contact__mail:hover::after{
+   background-position: 0 0;
+
+}
+.contact__tel:hover::after{
+   background-position: 0 0;
 }
 .contact__tel{
    font-size: 24px;
@@ -103,12 +138,30 @@
    text-decoration: none;
    margin-top: 12px;
 }
-.lang-menu a{   
-   text-decoration: none;
-}
-.contact__lang{
+.contact__lang-button{
    margin-top: 40px;
+   width: 20px;
+   height: 20px;
+   margin-right: 5px;
 }
-.lang--active{
+.lang-button--active{
    color: #7E7E82;
+}
+.lang-ch{
+   transition: scale 0.5s ease-in-out;
+}
+.lang-ch:hover{
+   transform:scale(0.8);
+}
+.lang-ru{
+   transition: scale 0.5s ease-in-out;
+}
+.lang-ru:hover{
+   transform:scale(0.8);
+}
+.lang-en{
+   transition: scale 0.5s ease-in-out;
+}
+.lang-en:hover{
+   transform:scale(0.8);
 }
