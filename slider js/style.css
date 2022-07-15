@@ -66,6 +66,9 @@
    width: auto;
    margin-top: 24px;
 }
+.content__image{
+   margin-left: 0;
+}
 .full-view{
    background-image: url(../img-style/icon.png);
    background-repeat: no-repeat;
@@ -85,6 +88,7 @@
    align-items: center;
 }
 .button-right{
+   margin-right: 0;
    border: 2px solid #FF3E79;
    border-radius: 50%;
    background: url(../img-style/dropdown.png) 50% 50% no-repeat;
