@@ -38,6 +38,7 @@
    list-style-type: none;
    display: grid;
    grid-auto-rows: 72px;
+   grid-auto-columns: 240px;
    grid-template-columns: repeat(3, 1fr);
    row-gap: 16px;
    column-gap: 24px;
@@ -118,7 +119,11 @@ height: 24px;}
    .wrapper{
       width: 1120px;
    }
+   .slider{
+      width: 1000px;
+   }
    .content__list{
+      margin-left: 0;
       grid-template-columns: repeat(4, 1fr);
    }
 }
