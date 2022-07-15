@@ -37,6 +37,7 @@
 .content__list{
    list-style-type: none;
    display: grid;
+   grid-auto-rows: 72px;
    grid-template-columns: repeat(3, 1fr);
    row-gap: 16px;
    column-gap: 24px;
