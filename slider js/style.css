@@ -1,0 +1,119 @@
+@import url(../fonts/font.css);
+
+*{
+   margin: 0 auto;
+   padding: 0;
+   font-family: 'TT Lakes';
+   font-size: 16px;
+   line-height: 24px;   
+   letter-spacing: -0.2px;
+   color: #1b1c21;
+   font-weight:500;
+}
+.wrapper{
+   width: 768px;
+}
+
+.button{   
+   border: none;
+   background: none;
+   height: 40px;
+   width: 40px;   
+}
+.button:hover{   
+   cursor: pointer;
+}
+.slider{
+   padding: 0 24px 0 24px;
+}
+/* header */
+.header{
+   padding: 16px 0;
+}
+.header__title {
+   text-transform: uppercase;
+   color: #7E7E82;
+}
+.content__list{
+   list-style-type: none;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   row-gap: 16px;
+   column-gap: 24px;
+   padding-top: 24px;   
+   height: 320px;
+   overflow-y: hidden;
+   
+   transition: height 0.3s;
+}
+.hidden{
+   height: 160px;
+}
+.content__list::-webkit-scrollbar{
+      display: none;
+}
+.list__item{
+   box-sizing: border-box;
+   width: 224px;
+   height: 72px;
+   background: #FFFFFF;
+   border: 1px solid #EAEAEA;
+   border-radius: 6px;
+}
+
+/* main */
+.content__button{
+   width: auto;
+   margin-top: 24px;
+}
+.full-view{
+   background-image: url(../img-style/icon.png);
+   background-repeat: no-repeat;
+   background-position: 0 45%;
+   padding-left: 24px;
+
+}
+.opened{   
+   background-image: url(../img-style/icon-top.png);
+}
+
+/* template */
+.list__item{
+   padding: 16px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.button-right{
+   border: 2px solid #FF3E79;
+   border-radius: 50%;
+   background: url(../img-style/dropdown.png) 50% 50% no-repeat;
+}
+
+/* logo-type */
+.logo-lenovo{width: 108px;
+height: 32px;}
+.logo-hp{width: 52px;
+height: 52px;}
+.logo-samsung{width: 116px;
+height: 40px;}
+.logo-apple{width: 44px;
+height: 44px;}
+.logo-sonic{width: 128px;
+height: 21px;}
+.logo-sony{width: 128px;
+height: 26px;}
+.logo-bosch{width: 128px;
+height: 30px;}
+.logo-acer{width: 94px;
+height: 24px;}
+
+
+@media (min-width:1120px){
+   .wrapper{
+      width: 1120px;
+   }
+   .content__list{
+      grid-template-columns: repeat(4, 1fr);
+   }
+}
