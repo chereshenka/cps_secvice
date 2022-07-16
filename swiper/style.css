@@ -1,4 +1,3 @@
-@import url('node_modules/swiper/swiper-bundle.min.css');
 @import url('../fonts/font.css');
 
 *{
@@ -31,10 +30,13 @@
    border: none;
    background: none;
    height: 40px;
-   width: 40px;   
+   width: 40px;
 }
 .button:hover{   
    cursor: pointer;
+}
+.button:focus{   
+   outline:none;
 }
 /* logo-type */
 .logo-lenovo{width: 108px;
