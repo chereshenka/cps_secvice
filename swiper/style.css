@@ -1,0 +1,194 @@
+@import url('node_modules/swiper/swiper-bundle.min.css');
+@import url('../fonts/font.css');
+
+*{
+   margin: 0 auto;
+   padding: 0;
+   font-family: 'TT Lakes';
+   font-size: 16px;
+   line-height: 24px;   
+   letter-spacing: -0.2px;
+   color: #1b1c21;
+   font-weight:500;
+}
+.slider{
+   width: 320px;
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   padding-left: 16px;
+}
+.swiper {
+   display: block;
+   width: 320px;
+   height: 155px;
+ }
+ .content{
+   display: none;
+ }
+/* buttons */
+ .button{   
+   border: none;
+   background: none;
+   height: 40px;
+   width: 40px;   
+}
+.button:hover{   
+   cursor: pointer;
+}
+/* logo-type */
+.logo-lenovo{width: 108px;
+   height: 32px;}
+   .logo-hp{width: 52px;
+   height: 52px;}
+   .logo-samsung{width: 116px;
+   height: 40px;}
+   .logo-apple{width: 44px;
+   height: 44px;}
+   .logo-sonic{width: 128px;
+   height: 21px;}
+   .logo-sony{width: 128px;
+   height: 26px;}
+   .logo-bosch{width: 128px;
+   height: 30px;}
+   .logo-acer{width: 94px;
+   height: 24px;}
+/* header */
+   .header{
+      padding-top: 16px;
+      margin-left: 0;
+   }
+   .header__title {
+      text-transform: uppercase;
+      color: #7E7E82;
+      margin-bottom: 32px;
+
+   }
+
+   /* swiper */
+   .swiper-wrapper{
+      display: flex;
+      height: 104px;
+      min-width: 0;
+      margin-left: -30px;
+   }
+   .swiper-slide{
+      box-sizing: border-box;
+      height: 72px;
+      background: #FFFFFF;
+      border: 1px solid #EAEAEA;
+      border-radius: 6px;
+      padding: 16px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      flex-shrink: 0;
+   }
+   .content__image{
+      margin-left: 0;
+   }
+   .button-right{
+      margin-right: 0;
+      border: 2px solid #FF3E79;
+      border-radius: 50%;
+      background: url(../img-style/dropdown.png) 50% 50% no-repeat;
+   }
+   .swiper-pagination{
+      bottom: 0;
+      margin-left: -10px;
+   }
+   .swiper-pagination-bullet{
+     margin: 0 auto;
+      width: 12px;
+      height: 12px;
+      line-height: 12;
+      font-size: 14px;
+      background-color: fff;
+   }
+
+   @media (min-width: 768px){
+      .slider{
+         padding: 0 24px 0 24px;
+         width: 768px;
+      }
+      .swiper{
+         display: none;
+      }
+      .content{
+         display: block;
+         margin-left: 0;
+      }
+      .content__list{
+         list-style-type: none;
+         display: grid;
+         grid-auto-rows: 72px;
+         grid-auto-columns: 240px;
+         grid-template-columns: repeat(3, 1fr);
+         row-gap: 16px;
+         column-gap: 24px;
+         padding-top: 24px;   
+         height: 320px;
+         overflow-y: hidden;
+         
+         transition: height 0.3s;
+      }
+      .hidden{
+         height: 160px;
+      }
+      .content__list::-webkit-scrollbar{
+         display: none;
+      }
+      .list__item{
+         box-sizing: border-box;
+         width: 224px;
+         height: 72px;
+         background: #FFFFFF;
+         border: 1px solid #EAEAEA;
+         border-radius: 6px;
+      }
+      
+      /* main */
+      .content__button{
+         width: auto;
+         margin-top: 24px;
+      }
+      .content__image{
+         margin-left: 0;
+      }
+      .full-view{
+         background-image: url(../img-style/icon.png);
+         background-repeat: no-repeat;
+         background-position: 0 45%;
+         padding-left: 24px;
+      
+      }
+      .opened{   
+         background-image: url(../img-style/icon-top.png);
+      }
+      
+      .list__item{
+         padding: 16px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      .button-right{
+         margin-right: 0;
+         border: 2px solid #FF3E79;
+         border-radius: 50%;
+         background: url(../img-style/dropdown.png) 50% 50% no-repeat;
+      }
+      
+      @media (min-width:1120px){
+         .wrapper{
+            width: 1120px;
+         }
+         .slider{
+            width: 1000px;
+         }
+         .content__list{
+            margin-left: 0;
+            grid-template-columns: repeat(4, 1fr);
+         }
+      }
+   }
