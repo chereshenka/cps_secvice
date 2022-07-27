@@ -9,7 +9,7 @@ window.addEventListener('resize', () => {
             type: 'bullets',
             clickable: true,
          },
-         slidesPerView: 1.4,
+         slidesPerView: 'auto',
          slidesOffsetBefore: 30,
          spaceBetween: 16,
       });
